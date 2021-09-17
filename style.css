@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#modal_update{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: none;
+}
+#content{
+    background-color: rgba(18, 22, 22, 0.979) ;
+    padding: 2.5rem 1.5rem;
+    border-radius: 3rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 73, 95);
+    width: 90%;
+    padding: 4rem 1rem;
+    margin: 2rem 0;
+}
+button,input
+{
+    transition: all 1s ease;
+}
+button:hover, input:focus
+{
+    opacity: 0.8;
+    font-size: large;
+    cursor: pointer;
+    outline: none;
+}
+#modal_update input:focus
+{
+    font-size:0.82rem;
+}
+h1,h2
+{
+    color: white;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    transition: zoom 1s ease;
+    animation: zoom infinite ease 1s alternate;
+}
+h2
+{
+    animation: none;
+}
+#cross
+{
+    margin-left: 23rem;
+    color: white;
+    font-size:2.5rem ;
+    cursor: pointer;
+}
+#cross:hover
+{
+    color: rgb(133, 129, 129);
+}
+#content h2
+{
+    margin-left: 2.5rem;
+}
+input{
+    width: 95%;
+    height: 2rem;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: none;
+}
+.add
+{
+    width: 95%;
+    height: 3rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background-color: rgb(20, 101, 250);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.remind
+{
+    display: flex;
+    color: rgba(201, 197, 197, 0.623);
+    width: 65%;
+    margin-left: 20px;
+}
+#remind .check
+{
+    margin: 0;
+    width: 2rem;
+    margin-left: 4rem;
+}
+
+#tasks-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.596);
+    width: 95%;  
+    height: 28rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    overflow: auto;
+}
+.task
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid rgb(26, 26, 27);
+    background-color: aliceblue;
+    font-size: 1.25rem;
+}
+.task p{
+    margin:0 4px;
+}
+.task #update,#delete
+{
+    background-color: rgb(20, 101, 250);
+    color: white;
+    padding: 8px;
+    font-size: large;
+    border: none;
+    border-radius: 3px;
+    margin: 0 3px;
+}
+#delete
+{
+    background-color: rgb(214, 69, 25);
+    text-align: center;
+    padding: 8px 10PX;
+}
+#invalid,#invalide
+{
+    color: rgb(214, 25, 25);
+    font-size: 1.2rem;
+}
+.task .name
+{
+    font-weight: bold;
+    text-shadow: 1px 2px  rgb(187, 184, 184);
+}
+
+@keyframes zoom {
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@media(min-width: 850px){
+    section{
+        width: 50%;
+    }
+}

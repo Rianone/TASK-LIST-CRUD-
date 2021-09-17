@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task list</title>
+</head>
+<body>
+   <div id="modal_update">
+       <div id="content">
+        <span id="cross">&Cross;</span>
+       <h2>Update task here</h2>
+        <p id="invalide"></p>
+        <input type="text" name="text" id="text_up" placeholder="Update task name" class="text">
+        <input type="datetime-local" name="date" id="date_up" class="date">
+        <div id="remind_up" class="remind"><span>Toggle Reminder</span><input type="checkbox" class="check" id="check_up"></div>
+        <button id="add_up" class="add">ADD &plus;</button>
+    </div>
+   </div>
+
+    <section>
+        <h1>Add Tasks Here</h1>
+        <p id="invalid"></p>
+        <input type="text" name="text" id="text" placeholder="Add task name" class="text">
+        <input type="datetime-local" name="date" id="date">
+        <div id="remind" class="remind"><span>Toggle Reminder</span><input type="checkbox" class="check" id="check"></div>
+        <button id="add" class="add">ADD &plus;</button>
+
+        <div id="tasks-box">
+           <h2>Tasks</h2>
+           <h3 id="no">No tasks yet !!!</h3>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
